@@ -1,0 +1,1191 @@
+@import url(reset.css);
+/* main  */
+body{
+    font-family: "Noto Sans Korean";
+    font-size: 12px;
+    color: #000;
+    height: 100%;
+}
+a{
+    color: #666;
+    text-decoration: none;
+}
+/* container  */
+#container > div{
+    width: 100%;
+    position: relative;
+}
+#container > div > section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+/* //mainvisual  */
+#mainvisual{
+    position: relative;
+    overflow: hidden;
+    /* padding-bottom: 50px; */
+}
+#mainvisual > section > h2{
+    position: absolute;
+    width: 500px;
+    height: 73px;
+    left: 190px;
+    bottom: 50%;
+    opacity: 0;
+}
+#mainvisual > section.on > h2{
+    opacity: 1;
+    transition: all 1s ease 0.5s;
+}
+#mainvisual > section > h3{
+position: absolute;
+left: 295px;
+bottom: 59%;
+font-size: 35px;
+font-weight: 500;
+letter-spacing: 2.9px;
+text-align: center;
+color: #000;
+opacity: 0;
+}
+#mainvisual > section.on > h3{
+    opacity: 1;
+    transition: all 1s ease 0.5s;
+}
+#mainvisual > section > h3 > em{
+    color: #ffba00;
+    font-weight: bold;
+}
+#mainvisual section > div:first-child{
+    position: absolute;
+    width: 1100px;
+    height: 1100px;
+    border-radius: 50%;
+    background:#ffba00;
+    left: 50%;
+    bottom:80px;
+}
+#mainvisual section > div:nth-child(2){
+    position: absolute;
+    width: 1200px;
+    height: 1200px;
+    border-radius: 50%;
+    border: 3px solid #ffd972;
+    left: 905px;
+    bottom: 40px;
+}
+#mainvisual section > div:nth-child(3){
+    position: absolute;
+    width: 1300px;
+    height: 1300px;
+    border-radius: 50%;
+    border: 3px solid#ffd972;
+    left: 855px;
+    bottom:5px;
+}
+#mainvisual section > div:nth-child(4){
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background:  #ffd972;
+    left: 880px;
+    top: 50px;
+    animation: clr1 2s ease-in-out infinite;
+}
+@keyframes clr1{
+    0% {transform: scale(1)}
+    50% {transform: scale(1.2)}
+    100% {transform: scale(1)}
+}
+#mainvisual section.on > div:nth-child(4){
+    transition: all 1s ease-in-out infinite 1s;
+    background:  #85ffd6;
+}
+#mainvisual section > div:nth-child(5){
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background:  #ffaa72;
+    left: 930px;
+    top: 500px;
+    animation: clr2 1.5s ease-in-out infinite;
+}
+@keyframes clr2{
+    0% {transform: scale(1)}
+    50% {transform: scale(1.2)}
+    100% {transform: scale(1)}
+}
+#mainvisual section.on > div:nth-child(5){
+    transition: all 1s ease-in-out infinite 1s;
+    background:  #ff7671;
+}
+#mainvisual section > div:nth-child(6){
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background:  #72ff9c;
+    right: 490px;
+    bottom: 3px;
+    animation: clr3 2s ease-in-out infinite;
+}
+@keyframes clr3{
+    0% {transform: scale(1)}
+    50% {transform: scale(1.2)}
+    100% {transform: scale(1)}
+}
+#mainvisual section.on > div:nth-child(6){
+    transition: all 1.2s ease-in-out infinite 2s;
+    background:  #ffd972;
+}
+#mainvisual section > div:nth-child(7){
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ffd972;
+    right: 30px;
+    bottom: 136px;
+    animation: clr4 2s ease-in-out infinite;
+}
+@keyframes clr4{
+    0% {transform: scale(1)}
+    50% {transform: scale(1.2)}
+    100% {transform: scale(1)}
+}
+#mainvisual section.on > div:nth-child(7){
+    transition: all 1s ease-in-out infinite 1s;
+    background: #33d5ff;
+}
+
+#mainvisual section .main1{
+    z-index: 1;
+    position: absolute;
+    width: 370px;
+    top: 140px;
+    left: 55%;
+    opacity: 0;
+    transition: all 1s ease 1s;
+}
+#mainvisual section.on .main1{
+    opacity: 1;
+    transform: translateY(-110px);
+    transition: all 1s ease 1s;
+}
+#mainvisual section .main2{
+    position: absolute;
+    width: 360px;
+    right:155px;
+    /* top: 70px; */
+    opacity: 0;
+    transition: all 1s ease 1s;
+}
+#mainvisual section.on .main2{
+    opacity: 1;
+    transform: translateY(100px);
+    transition: all 1s ease 1s;
+}
+#mainvisual section .main3{
+    position: absolute;
+    width: 300px;
+    bottom: 230px;
+    left:120px;
+    opacity: 0;
+}
+#mainvisual section .main4{
+    position: absolute;
+    width: 300px;
+    bottom: 230px;
+    left: 450px;
+    opacity: 0;
+}
+#mainvisual section.on .main3{
+    opacity: 1;
+    transition: all 1s ease 0.5s;
+}
+#mainvisual section.on .main4{
+    opacity: 1;
+    transition: all 1s ease 0.5s;
+}
+
+/* content1 */
+#content1{
+position: relative;
+text-align: center;
+}
+#content1 > section > h2{
+    width: 600px;
+    padding: 30px;
+}
+#content1 > section .cont1{
+    display:block; 
+    margin:auto;
+    margin-bottom: 30px;
+    width: 350px;
+    transition: all 0.5s ease 0.4s;
+    opacity: 0;
+}
+#content1 > section.on .cont1{
+    opacity: 1;
+    transition: all 0.5s ease 0.4s;
+}
+#content1 > section strong{
+    font-size: 80px;
+    font-weight: 550;
+    letter-spacing: 5px;
+    color: #000;
+    opacity: 0;
+    transition: all 0.5s ease 0.4s;
+}
+#content1 > section.on strong{
+    opacity: 1;
+    transition: all 0.5s ease 0.4s;
+}
+#content1 > section p{
+    padding-top: 60px;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 1.43;
+    letter-spacing: 1.5px;
+    color: #2f2f2f;
+    transition: all 1.5s ease 1.5s;
+    opacity: 0;
+}
+#content1 > section.on p{
+    opacity: 1;
+    transform: translateY(10px);
+    transition: all 1s ease 1s;
+}
+#content1 > section p span:nth-of-type(1){
+    color: #ffba00;
+    font-weight: bold;
+}
+#content1 > section p span:nth-of-type(2){
+    color: #33d5ff;
+    font-weight: bold;
+}
+#content1 > section p span:nth-of-type(3){
+    color: #ff333a;
+    font-weight: bold;
+}
+/* /content2  */
+#content2{
+    position: relative;
+}
+#content2> section > h2{
+    width: 600px;
+    padding: 30px;
+}
+#content2> section > h3:nth-of-type(1){
+padding-top: 20px;
+padding-bottom: 20px;
+text-align: center;
+font-size: 40px;
+font-weight: 550;
+letter-spacing: 0.57px;
+color: #000;
+opacity: 0;
+}
+#content2 > section.on > h3:nth-of-type(1){
+    opacity: 1;
+    transform: translateY(10px);
+    transition: all 0.5s ease 0.5s;
+}
+section .cont2_1{
+    padding-top: 10px;
+    display: block;
+    margin:0 auto;
+    padding-bottom: 150px;
+    opacity: 0;
+}
+section.on .cont2_1{
+    opacity: 1;
+    transform: translateY(10px);
+    transition: all 0.5s ease 0.5s;
+}
+.brand_value h3{
+    font-size: 40px;
+    font-weight: 550;
+    letter-spacing: 0.57px;
+    color: rgb(0, 0, 0);
+    padding-bottom: 40px;
+}
+.brand_value {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px 0  100px;
+}
+.brand_value p{
+    font-size: 30px;
+}
+.color, .typo, .icons{
+    text-align: center;
+    opacity: 0;
+}
+section.on .color{
+    opacity: 1;
+    transform: translateX(10px);
+    transition: all 1s ease 1s;
+}
+section.on .typo{
+    opacity: 1;
+    transition: all 1s ease 1s;
+}
+section.on .icons{
+    opacity: 1;
+    transform: translateX(-10px);
+    transition: all 1s ease 1s;
+}
+.color img{
+    position: relative;
+   top: -10px;
+}
+.color p:nth-of-type(1){
+    position: absolute;
+    text-align: center;
+    left: 125px;
+    bottom: 157px;
+    font-size: 23px;
+    color: #fff;
+}
+.color p:nth-of-type(2){
+    position:absolute;
+    left: 267px;
+    bottom: 157px;
+    font-size: 23px;
+    color: #ffba00;
+}
+/* content3  */
+#content3{
+    position: relative;
+}
+#content3> section > h2{
+    width: 600px;
+    padding: 30px;
+}
+#content3> section > img:first-of-type{
+    position: absolute;
+    width: 280px;
+    /* left: 20px; */
+    top: 200px;
+    margin-left: 100px;   
+    box-shadow: 0px 0px 9px 2px rgb(235, 180, 30);
+    opacity: 0;
+}
+#content3> section.on > img:first-of-type{
+    opacity: 1;
+    transform: translateX(20px);
+    transition: all 0.5s linear 0.5s;
+}
+#content3> section > img:nth-of-type(2){
+    position: absolute;
+    width: 280px;
+    /* left: 460px; */
+    top: 200px;
+    box-shadow: 0px 0px 9px 2px rgb(235, 180, 30);
+    opacity: 0;
+}
+#content3> section.on > img:nth-of-type(2){
+    opacity: 1;
+    transform: translateX(460px);
+    transition: all 0.8s linear 0.8s;
+}
+#content3> section > img:nth-of-type(3){
+    position: absolute;
+    width: 280px;
+    /* left: 800px; */
+    top: 200px;
+    box-shadow: 0px 0px 9px 2px rgb(235, 180, 30);
+    opacity: 0;
+}
+#content3> section.on > img:nth-of-type(3){
+    opacity: 1;
+    transform: translateX(800px);
+    transition: all 1s linear 1s;
+}
+#content3> section > img:last-of-type{
+    width: 530px;
+    position: absolute;
+    right:140px;
+    opacity: 0;
+}
+#content3> section.on > img:last-of-type{
+    opacity: 1;
+    transition: all 0.5s linear 2s;
+}
+/* 작은 동그라미  */
+#content3 > section > div:nth-child(1){
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fd8d8d;
+    left: 32px;
+    top: 243px;
+    animation: clr1 2s ease-in-out infinite;
+}
+#content3 > section > div:nth-child(2){
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #93d5fc;
+    left: 410px;
+    top: 567px;
+    animation: clr1 2s ease-in-out infinite;
+}
+#content3 > section > div:nth-child(3){
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ffc4ac;
+    left: 32px;
+    top: 210px;
+    animation: clr1 2s ease-in-out infinite;
+}
+/*content4*/
+#content4{
+    position: relative;
+}
+#content4 > section > h2{
+    width: 600px;
+    position: absolute;
+    margin-left: 92px;
+    top: 400px;
+    opacity: 0;
+    /* left: 235px; */
+}
+#content4 > section.on > h2{
+    opacity: 1;
+    transform: translateX(200px);
+    transition: all 1.5s ease 0.1s;
+}
+#content4 > section > p{
+    position: absolute;
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-align: left;
+    color: #ffba00;
+    top: 500px;
+    /* left: 330px; */
+    opacity: 0;
+}
+#content4 > section.on > p{
+    opacity: 1;
+    transform: translateX(290px);
+    transition: all 1.5s ease 0.1s;
+}
+#content4 > section > img:nth-of-type(1){
+    position: absolute;
+    padding-top: 20px;
+    width: 360px;
+    right:220px;
+    bottom: 90px;
+    opacity: 0;
+}
+#content4 > section.on > img:nth-of-type(1){
+    opacity: 1;
+    transition: all 1.5s ease 0.9s;
+}
+
+#content4 > section > img:nth-of-type(2){
+    position: absolute;
+    padding-top: 20px;
+    width: 360px;
+    right: 610px;
+    top: 50px;
+    opacity: 0;
+}
+#content4 > section.on > img:nth-of-type(2){
+    opacity: 1;
+    transition: all 1.5s ease 0.7s;
+}
+/* 동그라미 */
+#content4 > section > div:first-child{
+    z-index: -2;
+    position: absolute;
+    width: 1300px;
+    height: 1300px;
+    border-radius: 50%;
+    border: solid 5px #ffb900;
+    opacity: 0.4;
+    left: -695px;
+    bottom:  360px;
+}
+#content4 > section > div:nth-child(2){
+    z-index: -2;
+    position: absolute;
+    width: 1150px;
+    height: 1150px;
+    border-radius: 50%;
+    border: solid 5px #ffb900;
+    opacity: 0.4;
+    left: -630px;
+    bottom:  430px;
+} 
+#content4 > section > div:nth-child(3){
+    z-index: -2;
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    border: solid 5px #ffb900;
+    opacity: 0.4;
+    left: -570px;
+    bottom:  500px;
+}
+/* 작은 동그라미  */
+#content4 > section > div:nth-child(4){
+        position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ffd972;
+    left: 32px;
+    bottom: 500px;
+    animation: clr1 2s ease-in-out infinite;
+}
+#content4 > section > div:nth-child(5){
+    position: absolute;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+background: #ff9e9b;
+left: 354px;
+bottom: 600px;
+animation: clr1 2s ease-in-out infinite;
+}
+#content4 > section > div:nth-child(6){
+    position: absolute;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+background: #ffb672;
+left: 590px;
+top: 10px;
+animation: clr1 2s ease-in-out infinite;
+}
+/*content5*/
+#content5{
+    position: relative;
+    text-align: center;
+} 
+#content5 > section > h2{
+    position: absolute;
+    padding: 30px;
+    width: 600px;
+    left: -50px;
+}
+#content5 > section > .cont5_1, .cont5_2{
+    padding-right: 30px;
+    padding-top: 135px;
+    width: 360px;
+    opacity: 0;
+}
+#content5 > section.on .cont5_1{
+    opacity: 1;
+    transition: all 1.5s ease 0.5s;
+}
+#content5 > section.on .cont5_2{
+    opacity: 1;
+    transition: all 1.5s ease 0.5s;
+}
+#content5 > section > .cont5_3{
+    padding-top: 100px;
+    position:absolute;
+    left: 600px;
+    top: 150px;
+    width: 400px;
+    opacity: 0;
+}
+#content5 > section.on .cont5_3{
+    opacity: 1;
+    transform: translateX(-500px);
+    transition: all 1.5s ease 0.8s;
+}
+#content5 > section > .cont5_4{
+    padding-top: 100px;
+    position:absolute;
+    right:560px;
+    top: 150px;
+    width: 400px;
+    opacity: 0;
+}
+#content5 > section.on .cont5_4{
+    opacity: 1;
+    transform: translateX(440px);
+    transition: all 1.5s ease 0.8s;
+}
+#content5 > section > p:nth-of-type(1){
+    padding-top: 70px;
+    position: absolute;
+    color: #ffba00;
+    font-size: 30px;
+    display: inline-block;
+    left: 180px;
+    top:90px;
+    opacity: 0;
+}
+#content5 > section.on > p:nth-of-type(1){
+opacity: 1;
+transition: all 1.5s ease 0.8s;
+}
+
+#content5 > section > p:nth-of-type(2){
+    padding-top: 70px;
+    position: absolute;
+    color: #ffba00;
+    display: inline-block;
+    font-size: 30px;
+    right: 180px;
+    top:90px;
+    opacity: 0;
+}
+#content5 > section.on > p:nth-of-type(2){
+opacity: 1;
+transition: all 1.5s ease 0.8s;
+}
+#content6{
+    position: relative;
+    text-align: center;    
+    overflow: hidden;
+}
+#content6 > section h2:nth-of-type(1){
+    position: absolute;
+    display: inline-block;
+    width: 600px;
+    left: 20px;
+    bottom: 280px;
+    opacity: 0;
+}
+#content6 > section.on h2:nth-of-type(1){
+    opacity: 1;
+    transition: all 1.5s ease 0.8s;
+}
+#content6 > section h2:nth-of-type(2){
+    position: absolute;
+    display: inline-block;
+    width: 600px;
+    right: 0;
+    top: 100px;
+    opacity: 0;
+}
+#content6 > section.on h2:nth-of-type(2){
+    opacity: 1;
+    transition: all 1.5s ease 1.5s;
+}
+#content6 > section  p:nth-of-type(1){
+    position: absolute;
+    color: #ffba00;
+    text-align: left;
+    font-size: 30px;
+    display: inline-block;
+    left: 80px;
+    bottom: 190px;
+    opacity: 0;
+}
+#content6 > section.on  p:nth-of-type(1){
+    opacity: 1;
+    transition: all 1.5s ease 0.8s;
+}
+#content6 > section  p:nth-of-type(2){
+    position: absolute;
+    color: #ffffff;
+    text-align: right;
+    font-size: 30px;
+    display: inline-block;
+    right: 50px;
+    top: 190px;
+    opacity: 0;
+}
+#content6 > section.on  p:nth-of-type(2){
+    opacity: 1;
+    transition: all 1.5s ease 1.5s;
+}
+#content6 > section .con6-1{
+    position: absolute;
+    width: 360px;
+    left: 580px;
+    top:170px;
+    opacity: 0;
+}
+#content6 > section.on .con6-1{
+    opacity: 1;
+    transition: all 1.5s ease 0.8s;
+}
+#content6 > section .con6-2{
+    position: absolute;
+    width: 360px;
+    top: 50px;
+    opacity: 0;
+}
+#content6 > section.on .con6-2{
+    opacity: 1;
+    transition: all 1.5s ease 1.5s;
+}
+/* content6 배경 동그라미  */
+#content6> section >div:nth-child(1){
+    z-index: -1;
+    position: absolute;
+    background: #ffe396;
+    width: 900px;
+    height: 900px;
+    border-radius: 50%;
+    right: -300px;
+    bottom: 35%;
+    opacity: 0;
+}
+#content6> section.on >div:nth-child(1){
+    opacity: 1;
+    background: #ffe396;
+    transition: all 1.3s ease 1.3s;
+}
+#content6> section >div:nth-child(2){
+    z-index: -1;
+    position: absolute;
+    border: #ffdb7c 3px solid;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    right: -350px;
+    bottom: 29%;
+    opacity: 0;
+}
+#content6> section.on >div:nth-child(2){
+    transition: all 1s ease 1.2s;
+    opacity: 1;
+}
+#content6> section >div:nth-child(3){
+    z-index: -2;
+    position: absolute;
+    border: #ffdb7c 3px solid;
+    width: 1100px;
+    height: 1100px;
+    border-radius: 50%;
+    right: -385px;
+    bottom: 24%;
+    opacity: 0;
+}
+#content6> section.on >div:nth-child(3){
+    transition: all 1s ease 1.4s;
+    opacity: 1;
+}
+/*content7*/
+#content7{
+    position: relative;
+} 
+#content7 > section h2{
+    width: 600px;
+    padding: 30px;
+}
+#content7 > section > .noti{
+    text-align: center;
+}
+#content7 > section > .noti img{
+    width: 360px;
+    padding-right: 70px;
+    opacity: 0;
+}
+#content7 > section > .noti img{
+    opacity: 1;
+    transition: all 1.5s ease 0.8s;
+}
+#content7 > section >.noti img:nth-child(1){
+    position: relative;
+    top: 40px;
+    opacity: 0;
+}
+#content7 > section.on >.noti img:nth-child(1){
+    opacity: 1;
+    transition: all 1.5s ease 0.8s;
+}
+#content7 > section >.noti img:nth-child(2){
+    position: relative;
+    top: 40px;
+    opacity: 0;
+}
+#content7 > section.on >.noti img:nth-child(2){
+    opacity: 1;
+    transition: all 1.5s ease 0.2s;
+}
+#content7 > section >.noti img:nth-child(3){
+    position: relative;
+    top: 40px;
+    opacity: 0;
+}
+#content7 > section.on >.noti img:nth-child(3){
+    opacity: 1;
+    transition: all 1.5s ease 0.8s;
+}
+#content7 > section > .noti p:nth-of-type(1){
+    color: #ffba00;
+    font-size: 30px;
+    position: absolute;
+    left: 295px;
+    top: 195px;
+    opacity: 0;
+}
+#content7 > section.on > .noti p:nth-of-type(1){
+    opacity: 1;
+    transition: all 1.5s ease 0.8s;
+}
+#content7 > section > .noti p:nth-of-type(2){
+    color: #ffba00;
+    position: absolute;
+    font-size: 30px;
+    left: 700px;
+    top: 130px;
+    opacity: 0;
+}
+#content7 > section.on > .noti p:nth-of-type(2){
+    opacity: 1;
+    transition: all 1.5s ease 0.2s;
+}
+#content7 > section > .noti p:nth-of-type(3){
+    color: #ffba00;
+    position: absolute;
+    font-size: 30px;
+    right:  370px;
+    top: 195px;
+    opacity: 0;
+}
+#content7 > section.on > .noti p:nth-of-type(3){
+    opacity: 1;
+    transition: all 1.5s ease 0.8s;
+}
+/*content8*/
+#content8{
+    position: relative;
+    text-align: center;
+}
+#content8 > section h2{
+    position: absolute;
+    width: 600px;
+    padding: 30px;
+    margin-bottom: 15px;
+    top: 50px;
+    left: -40px;
+}
+#content8 > section p:nth-of-type(1){
+    position: absolute;
+    color: #ffba00;
+    font-size: 30px;
+    text-align: left;
+    left: 125px;
+    top: 180px;
+    opacity: 0;
+}
+#content8 > section.on p:nth-of-type(1){
+    transition: all 1.5s ease 0.1s;
+    opacity: 1;
+}
+#content8 > section .cont8_1{
+    position: absolute;
+    left: 600px;
+    top: 100px;
+    opacity: 0;
+}
+#content8 > section.on .cont8_1{
+    transition: all 1.5s ease 0.2s;
+    opacity: 1;
+}
+#content8 > section .cont8_2{
+    position: absolute;
+    width: 360px;
+    left: 600px;
+    top: 300px;
+    opacity: 0;
+    transition: all 1.5s ease 0.5s;
+}
+#content8 > section.on .cont8_2{
+    transform: translateX(420px);
+    opacity: 1;
+}
+#content8 > section p:nth-of-type(2){
+    position: absolute;
+    color: #ffba00;
+    font-size: 30px;
+    right:  205px;
+    bottom: 485px;
+    text-align: left;
+    opacity: 0;
+}
+#content8 > section.on p:nth-of-type(2){
+    opacity: 1;
+    transition: all 1.5s ease 1s;
+}
+#content8 > section .cont8_3{
+    position: absolute;
+    width: 60px;
+    top:390px;
+    right: 450px;
+    opacity: 0;
+}
+#content8 > section.on .cont8_3{
+    opacity: 1;
+    transition: all 1.5s ease 1s;
+    animation: heart 2s ease-in-out infinite;
+}
+@keyframes heart{
+    0% {transform: scale(1)}
+    50% {transform: scale(1.3)}
+    100% {transform: scale(1)}
+}
+
+/* 배경 동그라미  */
+#content8 > section >div:nth-of-type(1){
+    z-index: -1;
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    border: 60px solid  #ffba00;
+    border-radius: 50%;
+    opacity: 0.3;
+    bottom: 350px;
+    left: -200px;
+}
+#content8 > section >div:nth-of-type(1){
+    transition: all 5s ease 0.5s;
+    animation: cercle 2s ease-in-out infinite;
+}
+@keyframes cercle{
+    0% {transform: scale(1)}
+    50% {transform: scale(1.05)}
+    100% {transform: scale(1)}
+}
+
+#content8 > section >div:nth-of-type(2){
+    z-index: -1;
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border: 50px solid  #ffba00;
+    border-radius: 50%;
+    opacity: 0.3;
+    bottom:  70px;
+    right: 400px;
+}
+#content9{
+    background: #FFE193;
+    position: relative;
+} 
+#content9 > section>h2{
+    width: 600px;
+    padding: 30px;
+
+}
+#content9 > section p:nth-of-type(1){
+    position: absolute;
+    font-size: 30px;
+    text-align: left;
+    color: #fff;
+    left: 33px;
+    opacity: 0;
+}
+#content9 > section.on p:nth-of-type(1){
+    opacity: 1;
+    transition: all 1.5s ease 0.2s;
+}
+/* 핸드폰 */
+#content9 > section > .con9_1{
+    position: absolute;
+    width: 360px;
+right: 780px;
+    top: 100px;
+    opacity: 0;
+}
+#content9 > section.on > .con9_1{
+    opacity: 1;
+    transition: all 1.5s ease 0.8s;
+} 
+/* 큰달력 */
+#content9 > section > .con9_2{
+    position: absolute;
+    width: 300px;
+    right: 410px;
+    bottom: 150px;
+    opacity: 0;
+}
+#content9 > section.on > .con9_2{
+    opacity: 1;
+    transition: all 1.5s ease 4s;
+}
+/* 미니달력 */
+#content9 > section > .con9_3{
+    position: absolute;
+    width: 400px;
+    right: 755px;
+    top: 330px;
+    opacity: 0;
+}
+#content9 > section.on > .con9_3{
+    opacity: 1;
+    transform: scale(1.2);
+    transition: all 1.5s ease 1.8s;
+} 
+/* 손 */
+#content9 > section > .con9_4{
+    position: absolute;
+    width: 70px;
+    right: 750px;
+    top: 325px;
+    opacity: 0;
+}
+#content9 > section.on > .con9_4{
+    opacity: 1;
+    transform: scale(0.8);
+    transition: all 1.5s ease 3s;
+} 
+#content9 > section p:nth-of-type(2){
+    position: absolute;
+    font-size: 25px;
+    text-align: left;
+    color: #fff;
+    right: 365px;
+    bottom: 60px;
+    opacity: 0;
+}
+#content9 > section.on p:nth-of-type(2){
+    opacity: 1;
+    transform: scale(1.1);
+    transition: all 1.5s ease 4s;
+} 
+#content9 > section >div{
+    position: absolute;
+    background: rgb(255, 255, 255);
+    width: 3px;
+    height: 120px;
+    right: 460px;
+    bottom: 130px;
+    opacity: 0;
+}
+#content9 > section.on >div{
+    opacity: 1;
+    transition: all 1.5s ease 4s;
+} 
+/* content10 */
+
+#content10{
+    background: #FFE193;
+
+}
+/* 동그라미  */
+#content10 > section > div:first-child{
+    position: absolute;
+    width: 1300px;
+    height: 1300px;
+    border-radius: 50%;
+    border: solid 5px #ffffff;
+    opacity: 0.4;
+    left: -695px;
+    bottom:  360px;
+}
+#content10 > section > div:nth-child(2){
+    position: absolute;
+    width: 1150px;
+    height: 1150px;
+    border-radius: 50%;
+    border: solid 5px #ffffff;
+    opacity: 0.4;
+    left: -630px;
+    bottom:  430px;
+} 
+#content10 > section > div:nth-child(3){
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    border: solid 5px #ffffff;
+    opacity: 0.4;
+    left: -570px;
+    bottom:  500px;
+}
+/* 작은 동그라미  */
+#content10 > section > div:nth-child(4){
+    position: absolute;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+background: #ffffff;
+left: 32px;
+bottom: 500px;
+animation: clr1 2s ease-in-out infinite;
+}
+#content10 > section > div:nth-child(5){
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ffffff;
+    left: 590px;
+    top: 0;
+    animation: clr1 2s ease-in-out infinite;
+}
+#content10 > section > div:nth-child(6){
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ffffff;
+    left: 50px;
+    top: -545px;
+    animation: clr1 2s ease-in-out infinite;
+
+}
+#content10 > section > div:nth-child(7){
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ffffff;
+    left: 405px;
+    top: -400px;
+    animation: clr1 2s ease-in-out infinite;
+}
+#content10 > section .mokup{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#content10 > section .mokup1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+#content10 >section.on .mokup{
+    opacity: 0;
+    transition: all 1.2s linear 0.5s;
+}
+#content10 >section.on .mokup1{
+    opacity: 1;
+    transition: all 1.2s linear 0.5s;
+}
+
+footer{
+    background: rgb(255, 255, 255);
+    opacity: 0.9;
+    height: 230px;
+    width: 100%;
+}
+footer p{
+    font-size: 90px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    color: #ffba00;
+
+}
+footer p:nth-of-type(2){
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #ffba00;
+}
+
+
